@@ -33,7 +33,7 @@ export default function Home() {
         <section className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'>
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Featured Presentation</h2>
           <p className='mt-2'>Sample endpoint report presentation showing CPU, memory, and disk utilization trends, critical applications monitoring, and detailed actionable insights for operational teams.</p>
-          <a href='https://github.com/good-pastel/TW-portfolio/blob/master/doc/Daily%20Report%20Endpoint%2011-07-2025.pdf' className='inline-block mt-3 text-pink-600 dark:text-pink-300 hover:text-pink-400 transition'>
+          <a href='https://raw.githubusercontent.com/good-pastel/TW-portfolio/refs/heads/master/doc/daily_report_sample.jpg' className='inline-block mt-3 text-pink-600 dark:text-pink-300 hover:text-pink-400 transition'>
             View Sample Presentation (PDF)
           </a>
         </section>
