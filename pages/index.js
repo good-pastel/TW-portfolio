@@ -107,7 +107,7 @@ export default function Home() {
           </ul>
         </motion.section>
 
-        {/* CONTACT */}
+            {/* CONTACT */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -117,8 +117,18 @@ export default function Home() {
         >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Contact</h2>
           <div className="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
-            <p>📧 deviyolanda901@gmail.com</p>
-            <p>🔗 linkedin.com/in/deviyool</p>
+            <p className="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              deviyolanda901@gmail.com
+            </p>
+            <p className="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v13H.22zM7.58 8h4.36v1.78h.06c.61-1.17..." />
+              </svg>
+              linkedin.com/in/deviyool
+            </p>
           </div>
         </motion.section>
       </main>
