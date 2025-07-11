@@ -6,28 +6,28 @@ export default function Home() {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShowTopBtn(window.scrollY > 300);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    if (typeof window !== 'undefined') {
+      const handleScroll = () => setShowTopBtn(window.scrollY > 300);
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
   }, []);
 
+  const scrollToTop = () => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className={
-      darkMode 
-        ? 'dark min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100 transition-colors duration-700' 
-        : 'min-h-screen bg-gray-50 text-gray-900 transition-colors duration-700'
+    <div className={darkMode
+      ? 'dark min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100 transition-colors duration-700'
+      : 'min-h-screen bg-gray-50 text-gray-900 transition-colors duration-700'
     }>
+
       {/* HERO */}
-      <header
-        className={`relative h-[90vh] bg-cover bg-center transition-colors duration-700 ${
-          darkMode ? 'bg-gray-900' : 'bg-pink-200'
-        }`}
-        style={{
-          backgroundImage: "url('/hero-bg.jpg')",
-        }}
-      >
+      <header className={`relative h-[90vh] bg-cover bg-center transition-colors duration-700 ${darkMode ? 'bg-gray-900' : 'bg-pink-200'}`}
+        style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/10"></div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold font-playfair">Devi Yolanda</h1>
@@ -44,13 +44,14 @@ export default function Home() {
       </header>
 
       <main className='max-w-2xl mx-auto p-6 space-y-6'>
+
         {/* ABOUT ME */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700 overflow-hidden"
+          className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow overflow-hidden"
         >
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <svg className="w-full h-full" fill="none">
@@ -76,13 +77,16 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'
+          className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow'
         >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Featured Presentation</h2>
           <p className='mt-2'>
-            Sample endpoint report presentation showing CPU, memory, and disk utilization trends, critical applications monitoring, and detailed actionable insights for operational teams.
+            Sample endpoint report showing CPU, memory, and disk trends, critical applications monitoring, and detailed insights.
           </p>
-          <a href='https://raw.githubusercontent.com/good-pastel/TW-portfolio/refs/heads/master/doc/daily_report_sample.jpg' className='inline-block mt-3 text-pink-600 dark:text-pink-300 hover:text-pink-400 transition'>
+          <a
+            href='https://raw.githubusercontent.com/good-pastel/TW-portfolio/refs/heads/master/doc/daily_report_sample.jpg'
+            className='inline-block mt-3 text-pink-600 dark:text-pink-300 hover:text-pink-400 transition'
+          >
             View Sample Presentation (PDF)
           </a>
         </motion.section>
@@ -103,7 +107,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'
+          className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow'
         >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Skills</h2>
           <ul className='list-none mt-4 space-y-3'>
@@ -130,7 +134,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'
+          className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow'
         >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Contact</h2>
           <div className="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
@@ -140,7 +144,29 @@ export default function Home() {
               </svg>
               deviyolanda901@gmail.com
             </p>
-
             <p className="flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v13H.22zM7.58 8h4.36v1.78h.06c.61-1.17
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v13H.22zM7.58 8h4.36v1.78h.06c.61-1.17..." />
+              </svg>
+              linkedin.com/in/deviyool
+            </p>
+          </div>
+        </motion.section>
+      </main>
+
+      {/* SCROLL TO TOP */}
+      {showTopBtn && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 bg-pink-500 text-white p-3 rounded-full shadow-lg hover:bg-pink-600 transition"
+        >
+          ↑
+        </button>
+      )}
+
+      <footer className="text-center p-4 bg-pink-600 text-white dark:bg-gray-950 dark:text-pink-300 mt-6">
+        &copy; 2025 Devi Yolanda - Technical Writer Portfolio
+      </footer>
+    </div>
+  );
+}
