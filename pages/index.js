@@ -45,7 +45,7 @@ export default function Home() {
 
       <main className='max-w-2xl mx-auto p-6 space-y-6'>
 
-        {/* ABOUT ME */}
+        {/* ABOUT */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,22 +53,10 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow overflow-hidden"
         >
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <svg className="w-full h-full" fill="none">
-              <defs>
-                <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <circle cx="1" cy="1" r="1" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#dotPattern)" className="text-pink-200 dark:text-gray-700" />
-            </svg>
-          </div>
-          <div className="relative z-10">
-            <h2 className="text-2xl font-semibold text-pink-600 dark:text-pink-400">About Me</h2>
-            <p className="mt-2">
-              I am a Technical Writer with a passion for transforming complex technical processes into clear, user-friendly documentation and engaging presentations.
-            </p>
-          </div>
+          <h2 className="text-2xl font-semibold text-pink-600 dark:text-pink-400">About Me</h2>
+          <p className="mt-2">
+            I am a Technical Writer with a passion for transforming complex technical processes into clear, user-friendly documentation and engaging presentations.
+          </p>
         </motion.section>
 
         {/* FEATURED */}
@@ -81,7 +69,7 @@ export default function Home() {
         >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Featured Presentation</h2>
           <p className='mt-2'>
-            Sample endpoint report showing CPU, memory, and disk trends, critical applications monitoring, and detailed insights.
+            Sample endpoint report showing CPU, memory, and disk trends, critical applications monitoring, and actionable insights.
           </p>
           <a
             href='https://raw.githubusercontent.com/good-pastel/TW-portfolio/refs/heads/master/doc/daily_report_sample.jpg'
@@ -91,7 +79,7 @@ export default function Home() {
           </a>
         </motion.section>
 
-        {/* WAVE SEPARATOR */}
+        {/* WAVE */}
         <div className="overflow-hidden -mt-1">
           <svg viewBox="0 0 1440 100" className="w-full" preserveAspectRatio="none">
             <path
@@ -110,21 +98,12 @@ export default function Home() {
           className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow'
         >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Skills</h2>
-          <ul className='list-none mt-4 space-y-3'>
-            {[
-              "Technical Documentation & Reporting",
-              "Data Interpretation for Non-Technical Stakeholders",
-              "Presentation Design & Content Structuring",
-              "System Monitoring Tools Interpretation",
-              "Information Architecture & User Guides",
-            ].map((skill, index) => (
-              <li key={index} className="flex items-start gap-2 text-gray-700 dark:text-gray-200">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 mt-1 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                {skill}
-              </li>
-            ))}
+          <ul className="list-disc list-inside mt-2 space-y-1 text-gray-800 dark:text-gray-200">
+            <li>📘 Technical Documentation & Reporting</li>
+            <li>📊 Data Interpretation for Stakeholders</li>
+            <li>🎨 Presentation Design</li>
+            <li>🛠️ System Monitoring Tools</li>
+            <li>📂 Information Architecture</li>
           </ul>
         </motion.section>
 
@@ -138,18 +117,8 @@ export default function Home() {
         >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Contact</h2>
           <div className="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
-            <p className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              deviyolanda901@gmail.com
-            </p>
-            <p className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v13H.22zM7.58 8h4.36v1.78h.06c.61-1.17..." />
-              </svg>
-              linkedin.com/in/deviyool
-            </p>
+            <p>📧 deviyolanda901@gmail.com</p>
+            <p>🔗 linkedin.com/in/deviyool</p>
           </div>
         </motion.section>
       </main>
