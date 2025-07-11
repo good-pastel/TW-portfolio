@@ -14,7 +14,7 @@ export default function Home() {
     darkMode ? 'bg-gray-900' : 'bg-pink-200'
   }`}
   style={{
-    backgroundImage: "url('/doc/hero-bg.jpg')", // Ganti dengan nama file gambar kamu
+    backgroundImage: "url('/hero-bg.jpg')", // Ganti dengan nama file gambar kamu
   }}
 >
   {/* Overlay */}
