@@ -51,8 +51,8 @@ export default function Home() {
 
         <section className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'>
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Contact</h2>
-          <p className='mt-2'>Email: devi.yolanda@email.com</p>
-          <p>LinkedIn: linkedin.com/in/deviyolanda</p>
+          <p className='mt-2'>Email: deviyolanda901@gmail.com</p>
+          <p>LinkedIn: linkedin.com/in/deviyool</p>
         </section>
       </main>
 
