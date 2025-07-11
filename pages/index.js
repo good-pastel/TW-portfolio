@@ -1,7 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className={
@@ -35,7 +45,13 @@ export default function Home() {
 
       <main className='max-w-2xl mx-auto p-6 space-y-6'>
         {/* ABOUT ME */}
-        <section className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700 overflow-hidden">
+        <motion.section
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700 overflow-hidden"
+        >
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <svg className="w-full h-full" fill="none">
               <defs>
@@ -52,10 +68,16 @@ export default function Home() {
               I am a Technical Writer with a passion for transforming complex technical processes into clear, user-friendly documentation and engaging presentations.
             </p>
           </div>
-        </section>
+        </motion.section>
 
-        {/* FEATURED PRESENTATION */}
-        <section className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'>
+        {/* FEATURED */}
+        <motion.section
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'
+        >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Featured Presentation</h2>
           <p className='mt-2'>
             Sample endpoint report presentation showing CPU, memory, and disk utilization trends, critical applications monitoring, and detailed actionable insights for operational teams.
@@ -63,7 +85,7 @@ export default function Home() {
           <a href='https://raw.githubusercontent.com/good-pastel/TW-portfolio/refs/heads/master/doc/daily_report_sample.jpg' className='inline-block mt-3 text-pink-600 dark:text-pink-300 hover:text-pink-400 transition'>
             View Sample Presentation (PDF)
           </a>
-        </section>
+        </motion.section>
 
         {/* WAVE SEPARATOR */}
         <div className="overflow-hidden -mt-1">
@@ -76,7 +98,13 @@ export default function Home() {
         </div>
 
         {/* SKILLS */}
-        <section className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'>
+        <motion.section
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'
+        >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Skills</h2>
           <ul className='list-none mt-4 space-y-3'>
             {[
@@ -87,50 +115,32 @@ export default function Home() {
               "Information Architecture & User Guides",
             ].map((skill, index) => (
               <li key={index} className="flex items-start gap-2 text-gray-700 dark:text-gray-200">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 mt-1 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 {skill}
               </li>
             ))}
           </ul>
-        </section>
+        </motion.section>
 
         {/* CONTACT */}
-        <section className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'>
+        <motion.section
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow transition-colors duration-700'
+        >
           <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Contact</h2>
           <div className="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
             <p className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4 4m0 0l-4-4m4 4V4" />
               </svg>
               deviyolanda901@gmail.com
             </p>
 
             <p className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v13H.22zM7.58 8h4.36v1.78h.06c.61-1.17 2.1-2.42 4.32-2.42 4.62 0 5.47 3.04 5.47 6.99v8.65h-4.56v-7.67c0-1.83-.03-4.19-2.56-4.19s-2.95 1.99-2.95 4.06v7.8H7.58V8z"/>
-              </svg>
-              <a
-                href="https://linkedin.com/in/deviyool"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-pink-600 dark:text-pink-300"
-              >
-                linkedin.com/in/deviyool
-              </a>
-            </p>
-          </div>
-        </section>
-      </main>
-
-      <footer className={
-        darkMode 
-          ? 'text-center p-4 bg-gray-950 text-pink-300 mt-6 transition-colors duration-700'
-          : 'text-center p-4 bg-pink-600 text-white mt-6 transition-colors duration-700'
-      }>
-        © 2025 Devi Yolanda - Technical Writer Portfolio
-      </footer>
-    </div>
-  );
-}
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-pink-500 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v13H.22zM7.58 8h4.36v1.78h.06c.61-1.17
