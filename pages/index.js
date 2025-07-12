@@ -55,7 +55,7 @@ export default function Home() {
         >
           <h2 className="text-2xl font-semibold text-pink-600 dark:text-pink-400">About Me</h2>
           <p className="mt-2">
-            I am a Technical Writer with a passion for transforming complex technical processes into clear, user-friendly documentation and engaging presentations.
+            Hello, I'm Devi. A meticulous and detail-oriented Technical Writer with a passion for transforming complex technical processes into clear, user-friendly documentation and engaging presentations.
           </p>
         </motion.section>
 
