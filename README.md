@@ -1,4 +1,4 @@
-# my_resume
+# TW_Portfolio
 
 > [[Devi Yolanda's Portfolio for Technical Writer](https://tw-portfolio-devi.vercel.app/)]
 
