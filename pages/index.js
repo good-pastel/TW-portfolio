@@ -26,7 +26,7 @@ export default function Home() {
     }>
 
       {/* HERO */}
-      <header className={relative h-[90vh] bg-cover bg-center transition-colors duration-700 ${darkMode ? 'bg-gray-900' : 'bg-pink-200'}}
+      <header className={`relative h-[90vh] bg-cover bg-center transition-colors duration-700 ${darkMode ? 'bg-gray-900' : 'bg-pink-200'}`}
         style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/10"></div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
