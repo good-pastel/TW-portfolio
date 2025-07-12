@@ -1,6 +1,6 @@
 # my_resume
 
-> [[my-resume](https://good-pastel.github.io/my-resume)]
+> [[Devi Yolanda's Portfolio for Technical Writer](https://tw-portfolio-devi.vercel.app/)]
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -23,9 +23,9 @@
 
 ## Description
 
-This is my personal portfolio.
+Just a simple website built with React.js and Tailwind CSS.
 
-&copy; Good Pastel. 2024
+&copy; Good Pastel. 2025
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
