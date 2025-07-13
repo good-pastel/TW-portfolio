@@ -89,8 +89,6 @@ export default function Home() {
   );
 }
 
-        <main className='max-w-2xl mx-auto p-6 space-y-6'>
-
           {/* ABOUT */}
 <motion.section
   initial={{ opacity: 0, y: 30 }}
