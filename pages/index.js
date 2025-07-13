@@ -25,7 +25,7 @@ export default function Home() {
       <Head>
         <title>Devi's Portfolio | Technical Writer</title>
         <meta name="description" content="Hi, I'm Devi. This is my portfolio website showcasing my technical writing and documentation work." />
-
+        
         {/* Open Graph / Social Sharing */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tw-portfolio-devi.vercel.app/" />
@@ -63,6 +63,9 @@ export default function Home() {
 </button>
           </div>
         </header>
+
+        <main className='max-w-2xl mx-auto p-6 space-y-6'>
+
           {/* ABOUT */}
 <motion.section
   initial={{ opacity: 0, y: 30 }}
