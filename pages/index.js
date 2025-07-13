@@ -99,15 +99,15 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className='bg-white dark:bg-gray-800 p-6 rounded-xl shadow'
           >
-            <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Featured Presentation</h2>
+            <h2 className='text-2xl font-semibold text-pink-600 dark:text-pink-400'>Work Showcase</h2>
             <p className='mt-2'>
-              Sample endpoint report showing CPU, memory, and disk trends, critical applications monitoring, and actionable insights.
+              Examples of endpoint reports I produced at work, highlighting CPU, memory, and disk usage trends, monitoring of critical applications, and actionable insights.
             </p>
             <a
               href='https://raw.githubusercontent.com/good-pastel/TW-portfolio/refs/heads/master/doc/daily_report_sample.jpg'
               className='inline-block mt-3 text-pink-600 dark:text-pink-300 hover:text-pink-400 transition'
             >
-              View Sample Presentation (PDF)
+              Deck - Daily Report (PDF)
             </a>
           </motion.section>
 
