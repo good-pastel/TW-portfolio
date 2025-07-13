@@ -1,10 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import Head from 'next/head'; // Tambahan ini penting!
+import Head from 'next/head';
 import { motion } from 'framer-motion';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [showTopBtn, setShowTopBtn] = useState(false);
+  const [backgroundImage, setBackgroundImage] = useState('/hero-bg.jpg'); // default desktop
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Ganti gambar jika di layar mobile
+      const updateBackground = () => {
+        if (window.innerWidth < 768) {
+          setBackgroundImage('/hero-bg-mobile.jpg');
+        } else {
+          setBackgroundImage('/hero-bg.jpg');
+        }
+      };
+
+      updateBackground(); // panggil saat awal load
+      window.addEventListener('resize', updateBackground);
+      return () => window.removeEventListener('resize', updateBackground);
+    }
+  }, []);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -25,7 +43,7 @@ export default function Home() {
       <Head>
         <title>Devi's Portfolio | Technical Writer</title>
         <meta name="description" content="Hi, I'm Devi. This is my portfolio website showcasing my technical writing and documentation work." />
-        
+
         {/* Open Graph / Social Sharing */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tw-portfolio-devi.vercel.app/" />
@@ -45,10 +63,13 @@ export default function Home() {
         ? 'dark min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100 transition-colors duration-700'
         : 'min-h-screen bg-gray-50 text-gray-900 transition-colors duration-700'
       }>
-
         {/* HERO */}
-        <header className={`relative h-[90vh] bg-cover bg-center transition-colors duration-700 ${darkMode ? 'bg-gray-900' : 'bg-pink-200'}`}
-          style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
+        <header
+          className={`relative h-[90vh] bg-cover bg-center transition-colors duration-700 ${
+            darkMode ? 'bg-gray-900' : 'bg-pink-200'
+          }`}
+          style={{ backgroundImage: `url('${backgroundImage}')` }}
+        >
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/10"></div>
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
             <h1 className="text-4xl md:text-6xl font-bold font-halimun">Devi Yolanda</h1>
@@ -56,13 +77,17 @@ export default function Home() {
               Technical Writer | Documentation Specialist | Content Strategist
             </p>
             <button
-  onClick={() => setDarkMode(!darkMode)}
-  className="mt-6 bg-white text-pink-600 px-4 py-2 rounded shadow hover:bg-pink-100 transition"
->
-  {darkMode ? 'Light ☀️' : 'Dark 🌙'}
-</button>
+              onClick={() => setDarkMode(!darkMode)}
+              className="mt-6 bg-white text-pink-600 px-4 py-2 rounded shadow hover:bg-pink-100 transition"
+            >
+              {darkMode ? 'Light ☀️' : 'Dark 🌙'}
+            </button>
           </div>
         </header>
+      </div>
+    </>
+  );
+}
 
         <main className='max-w-2xl mx-auto p-6 space-y-6'>
 
