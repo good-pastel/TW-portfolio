@@ -56,11 +56,11 @@ export default function Home() {
               Technical Writer | Documentation Specialist | Content Strategist
             </p>
             <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="mt-6 bg-white text-pink-600 px-4 py-2 rounded shadow hover:bg-pink-100 transition"
-            >
-               {darkMode ? 'Light' : 'Dark'} 🌙
-            </button>
+  onClick={() => setDarkMode(!darkMode)}
+  className="mt-6 bg-white text-pink-600 px-4 py-2 rounded shadow hover:bg-pink-100 transition"
+>
+  {darkMode ? 'Light ☀️' : 'Dark 🌙'}
+</button>
           </div>
         </header>
 
