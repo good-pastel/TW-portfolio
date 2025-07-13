@@ -78,7 +78,7 @@ export default function Home() {
 
   <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
     <img
-      src="/public/profile.jpg"
+      src="/profile.jpg"
       alt="Profile"
       className="w-32 h-32 rounded-full object-cover shadow-md border-4 border-pink-300 dark:border-pink-500"
     />
