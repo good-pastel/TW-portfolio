@@ -59,7 +59,7 @@ export default function Home() {
               onClick={() => setDarkMode(!darkMode)}
               className="mt-6 bg-white text-pink-600 px-4 py-2 rounded shadow hover:bg-pink-100 transition"
             >
-              Toggle {darkMode ? 'Light' : 'Dark'} Mode
+               {darkMode ? 'Light' : 'Dark'} 🌙
             </button>
           </div>
         </header>
