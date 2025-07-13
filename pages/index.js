@@ -67,18 +67,29 @@ export default function Home() {
         <main className='max-w-2xl mx-auto p-6 space-y-6'>
 
           {/* ABOUT */}
-          <motion.section
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow overflow-hidden"
-          >
-            <h2 className="text-2xl font-semibold text-pink-600 dark:text-pink-400">About Me</h2>
-            <p className="mt-2">
-              Hello, I'm Devi. A meticulous and detail-oriented Technical Writer with a passion for transforming complex technical processes into clear, user-friendly documentation and engaging presentations.
-            </p>
-          </motion.section>
+<motion.section
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow overflow-hidden"
+>
+  <h2 className="text-2xl font-semibold text-pink-600 dark:text-pink-400 mb-4">About Me</h2>
+
+  <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+    <img
+      src="/public/profile.jpg"
+      alt="Profile"
+      className="w-32 h-32 rounded-full object-cover shadow-md border-4 border-pink-300 dark:border-pink-500"
+    />
+
+    <p className="text-gray-800 dark:text-gray-200">
+      Hello, I'm Devi. A meticulous and detail-oriented Technical Writer with a passion
+      for transforming complex technical processes into clear, user-friendly documentation
+      and engaging presentations.
+    </p>
+  </div>
+</motion.section>
 
           {/* FEATURED */}
           <motion.section
