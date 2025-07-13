@@ -51,7 +51,7 @@ export default function Home() {
           style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/10"></div>
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
-            <h1 className="text-4xl md:text-6xl font-bold font-playfair">Devi Yolanda</h1>
+            <h1 className="text-4xl md:text-6xl font-bold font-halimun">Devi Yolanda</h1>
             <p className="mt-2 text-lg md:text-xl font-playfair">
               Technical Writer | Documentation Specialist | Content Strategist
             </p>
