@@ -23,7 +23,7 @@
 
 ## Description
 
-Just a simple website built with React.js and Tailwind CSS.
+Just a simple website built with Next.js and Tailwind CSS.
 
 &copy; Good Pastel. 2025
 
