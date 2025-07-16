@@ -23,6 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
+    <link rel="icon" href="/profile.jpg" type="image/x-icon">
         <title>Devi's Portfolio | Technical Writer</title>
         <meta name="description" content="Hi, I'm Devi. This is my portfolio website showcasing my technical writing and documentation work." />
         
