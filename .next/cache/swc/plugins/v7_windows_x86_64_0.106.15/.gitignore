@@ -1,7 +1,0 @@
-# Folder & file yang tidak perlu dipush ke GitHub
-node_modules/
-.next/
-out/
-dist/
-.env
-*.log
