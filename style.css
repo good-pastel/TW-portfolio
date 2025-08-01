@@ -313,11 +313,6 @@ body {
   font-family: monospace;
 }
 
---//.contact-info p::before {
-  content: "✺ ";
-  color: #000;
-}--//
-
 .svg-center {
   position: relative;
   width: 300px;
