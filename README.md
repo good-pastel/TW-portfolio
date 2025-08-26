@@ -1,5 +1,5 @@
 # Devi Yolanda - Technical Writer Portfolio
-> [[Resume Updated](https://good-pastel.github.io/TW-Portfolio)]
+> [[Technical Writer Portfolio](https://good-pastel.github.io/TW-portfolio)]
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
