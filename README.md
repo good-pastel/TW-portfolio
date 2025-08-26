@@ -1,6 +1,5 @@
-# Devi Yolanda - Resume Updated
-
-> [[Resume Updated](https://good-pastel.github.io/dy-resume)]
+# Devi Yolanda - Technical Writer Portfolio
+> [[Resume Updated](https://good-pastel.github.io/TW-Portfolio)]
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -22,9 +21,6 @@
 ---
 
 ## Description
-
-Updated resume with Tailwind (dark & light mode)
-
 
 &copy; Good Pastel. 2025
 
