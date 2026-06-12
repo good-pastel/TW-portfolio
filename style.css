@@ -27,6 +27,34 @@ body {
   margin-left: 1rem;
 }
 
+.detail-btn,
+.pdf-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.detail-btn {
+  border: none;
+  background: #444;
+  color: white;
+}
+
+.pdf-btn {
+  border: 1px solid #444;
+  color: #444;
+  margin-left: 8px;
+}
+
+.pdf-btn:hover {
+  background: #444;
+  color: white;
+}
+
 .cv-btn {
   padding: 10px 22px;
   border-radius: 25px;
