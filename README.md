@@ -75,9 +75,9 @@ Beyond technical writing, I enjoy learning new technologies and continuously imp
 
 ## 📬 Connect
 
-- 🌐 Portfolio Website
-- 💼 LinkedIn
-- 🐙 GitHub
+- 🌐 [Portfolio Website](https://good-pastel.github.io/TW-portfolio/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/deviyool)
+- 🐙 [GitHub](https://github.com/good-pastel)
 
 ---
 
