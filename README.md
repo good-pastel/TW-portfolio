@@ -1,31 +1,94 @@
-# Devi Yolanda - Technical Writer Portfolio
+# 📄 Technical Writer Portfolio
 
-> [[Technical Writer Portfolio](https://good-pastel.github.io/TW-portfolio)]
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-181717?logo=github)
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<br />
-<div align="center">
-  <a href="https://github.com/good-pastel/good-pastel.github.io">
-    <img src="https://raw.githubusercontent.com/good-pastel/good-pastel.github.io/refs/heads/main/img/logo_trans.png" alt="Header">
-  </a>
-
-  <h3 align="center">Welcome to Good Pastel</h3>
-
-  <p align="center">
-   <blockquote><i>"Colors fade, but pastels hold their magic forever. Let the pastels be a reflection of the beauty within your soul."</i></blockquote>
-   <br />
-    <a href="https://github.com/good-pastel?tab=repositories"><strong>Explore the other Repo»</strong></a>
-  </p>
-</div>
+A personal portfolio website showcasing my professional experience as a Technical Writer through enterprise documentation, operational reports, technical writing samples, and project deliverables.
 
 ---
 
-## Description
+## 🌐 Live Demo
 
-&copy; Good Pastel. 2025
+**https://good-pastel.github.io/TW-portfolio/**
 
-<!-- MARKDOWN LINKS & IMAGES -->
+---
 
-[linkedin-shield]: https://img.icons8.com/arcade/64/linkedin.png
-[linkedin-url]: https://linkedin.com/in/deviyool
+## 📄 Project Overview
+
+This portfolio was built to present my technical writing experience in a clean and accessible format for recruiters, hiring managers, and collaborators.
+
+It highlights documentation created for enterprise IT environments, including user guides, operational reports, implementation documents, SOPs, and various technical deliverables.
+
+---
+
+## ✨ Features
+
+- Professional Portfolio Layout
+- About Me
+- Technical Skills
+- Work Experience
+- Project Showcase
+- Documentation Samples
+- Downloadable Resume
+- Responsive Design
+
+---
+
+## 🛠 Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design
+- GitHub Pages
+
+---
+
+## 📂 Project Structure
+
+```text
+.
+├── index.html
+├── style.css
+├── script.js
+├── images/
+└── README.md
+```
+
+---
+
+## 🎯 Purpose
+
+The primary goal of this project is to provide a centralized portfolio where recruiters can quickly explore my documentation skills, technical knowledge, and professional experience.
+
+---
+
+## 👩 About Me
+
+I'm passionate about transforming complex technical information into clear, structured, and user-friendly documentation.
+
+Beyond technical writing, I enjoy learning new technologies and continuously improving my communication and documentation skills through hands-on projects.
+
+---
+
+## 📬 Connect
+
+- 🌐 Portfolio Website
+- 💼 LinkedIn
+- 🐙 GitHub
+
+---
+
+## 📜 License
+
+This repository is intended for portfolio and educational purposes.
+
+---
+
+<p align="center">
+
+Part of my personal **Portfolio Projects** collection, where I build, document, and continuously improve through hands-on development.
+
+</p>
