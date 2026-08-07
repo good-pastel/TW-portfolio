@@ -49,12 +49,32 @@ It highlights documentation created for enterprise IT environments, including us
 ## 📂 Project Structure
 
 ```text
-.
-├── index.html
-├── style.css
-├── script.js
-├── images/
-└── README.md
+TW-PORTFOLIO/
+│
+├── assets/
+│   ├── profile.jpg                 # Profile photo
+│   ├── projects/
+│   │   ├── project1.jpg            # Enterprise XDR Rollout Documentation
+│   │   ├── project1.pdf
+│   │   ├── project2.jpg            # Executive Security Report
+│   │   ├── project2.pdf
+│   │   ├── project3.jpg            # Splunk Operations Documentation
+│   │   ├── project3.pdf
+│   │   ├── project4.jpg            # RCA Report
+│   │   ├── project4.pdf
+│   │   ├── project5.jpg            # Cloud App Security POC Report
+│   │   ├── project5.pdf
+│   │   ├── project6.jpg            # Deployment Documentation
+│   │   └── project6.pdf
+│   │
+│   └── resume/
+│       └── Devi Yolanda CV.pdf     # Resume (Download)
+│
+├── index.html                      # Main portfolio page
+├── resume.html                     # Resume viewer page
+├── style.css                       # Website styles
+├── script.js                       # JavaScript interactions
+└── README.md                       # Project documentation
 ```
 
 ---
