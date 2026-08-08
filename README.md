@@ -56,16 +56,16 @@ TW-PORTFOLIO/
 │   ├── projects/
 │   │   ├── project1.jpg            # Enterprise XDR Rollout Documentation
 │   │   ├── project1.pdf
-│   │   ├── project2.jpg            # Executive Security Report
+│   │   ├── project2.jpg            # Figma Documentation Dashboard
 │   │   ├── project2.pdf
 │   │   ├── project3.jpg            # Splunk Operations Documentation
 │   │   ├── project3.pdf
 │   │   ├── project4.jpg            # RCA Report
 │   │   ├── project4.pdf
 │   │   ├── project5.jpg            # Cloud App Security POC Report
-│   │   ├── project5.pdf
-│   │   ├── project6.jpg            # Deployment Documentation
-│   │   └── project6.pdf
+│   │   └── project5.pdf
+│   │
+│   │
 │   │
 │   └── resume/
 │       └── Devi Yolanda CV.pdf     # Resume (Download)
