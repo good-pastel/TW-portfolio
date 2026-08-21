@@ -394,10 +394,6 @@ section {
   box-shadow: var(--shadow);
 }
 
-.profile-card img {
-  margin-top: 40px !important;
-}
-
 /* ==========================================================
    RESPONSIVE
 ========================================================== */
@@ -458,7 +454,7 @@ section {
 
   height: 180px;
 
-  margin: auto;
+  margin: 40px auto;
 
   border-radius: 50%;
 
