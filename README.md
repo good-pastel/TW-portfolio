@@ -1,114 +1,118 @@
-# 📄 Technical Writer Portfolio
+# Devi Yolanda | Technical Writer Portfolio
 
-![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-181717?logo=github)
+![Responsive Design](https://img.shields.io/badge/Responsive-Design-8CC8F0)
+![GitHub Pages](<https://img.shields.io/badge/Hosting-GitHub%20Pages-181717?logo=github>)
 
-A personal portfolio website showcasing my professional experience as a Technical Writer through enterprise documentation, operational reports, technical writing samples, and project deliverables.
-
----
-
-## 🌐 Live Demo
-
-**https://good-pastel.github.io/TW-portfolio/**
+A personal portfolio showcasing **Devi Yolanda's** experience in technical writing, cybersecurity documentation, technical reporting, information design, and Python-based reporting automation.
 
 ---
 
-## 📄 Project Overview
+## Project Overview
 
-This portfolio was built to present my technical writing experience in a clean and accessible format for recruiters, hiring managers, and collaborators.
+This portfolio presents how I turn complex technical information into clear, structured, and accessible documentation. It highlights my experience supporting IT and cybersecurity operations through technical documents, operational reporting, data transformation, and visual communication.
 
-It highlights documentation created for enterprise IT environments, including user guides, operational reports, implementation documents, SOPs, and various technical deliverables.
+The design uses a light pastel-blue palette with orange accents to create a clean, approachable, and professional experience.
 
----
+## Features
 
-## ✨ Features
+- Personal introduction and professional profile
+- Technical writing and cybersecurity documentation focus
+- Case studies describing project context, insights, and actions
+- Technical reporting and information-design showcase
+- Python ETL and reporting-automation workflow
+- Technical skills and tools
+- Work experience section
+- Contact and professional links
+- Responsive layout for desktop and mobile screens
+- Interactive navigation and case-study details
 
-- Professional Portfolio Layout
-- About Me
-- Technical Skills
-- Work Experience
-- Project Showcase
-- Documentation Samples
-- Downloadable Resume
-- Responsive Design
+## Tech Stack
 
----
+- **HTML5** — page structure and content
+- **CSS3** — responsive layout, styling, and visual design
+- **JavaScript** — interactive elements and navigation
+- **GitHub Pages** — intended static-site hosting
 
-## 🛠 Tech Stack
-
-- HTML5
-- CSS3
-- JavaScript
-- Responsive Design
-- GitHub Pages
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```text
-TW-PORTFOLIO/
-│
-├── assets/
-│   ├── profile.jpg                 # Profile photo
-│   ├── projects/
-│   │   ├── project1.jpg            # Enterprise XDR Rollout Documentation
-│   │   ├── project1.pdf
-│   │   ├── project2.jpg            # Figma Documentation Dashboard
-│   │   ├── project2.pdf
-│   │   ├── project3.jpg            # Splunk Operations Documentation
-│   │   ├── project3.pdf
-│   │   ├── project4.jpg            # RCA Report
-│   │   ├── project4.pdf
-│   │   ├── project5.jpg            # Cloud App Security POC Report
-│   │   └── project5.pdf
-│   │
-│   │
-│   │
-│   └── resume/
-│       └── Devi Yolanda CV.pdf     # Resume (Download)
-│
-├── index.html                      # Main portfolio page
-├── resume.html                     # Resume viewer page
-├── style.css                       # Website styles
-├── script.js                       # JavaScript interactions
-└── README.md                       # Project documentation
+devi-yolanda-portfolio/
+├── index.html      # Main portfolio page
+├── style.css       # Layout, colors, and responsive styles
+├── script.js       # Interactive behavior
+└── README.md       # Project documentation
 ```
 
+> This structure describes the current standalone prototype. If you add images, a resume PDF, or other assets later, update this section to reflect the actual files and folders.
+
+## Areas of Focus
+
+### Technical Writing & Documentation
+
+- Standard Operating Procedures (SOPs)
+- User manuals and technical guides
+- Root Cause Analysis (RCA) reports
+- Proof of Concept (PoC) reports
+- Implementation and operational documentation
+
+### Cybersecurity Operations & Reporting
+
+- Security-tool inventory and operational reporting
+- Endpoint security documentation
+- Consolidation of technical information from engineers and stakeholders
+- Clear presentation of operational status, findings, and follow-up actions
+
+### Python ETL & Reporting Automation
+
+- Collecting and consolidating data from CSV and Excel sources
+- Cleaning and transforming datasets
+- Preparing summaries and reporting outputs
+- Presenting information through structured tables and visualizations
+
+*Examples are presented at a high level to respect confidentiality. Sensitive company information and internal data are not published.*
+
+## Workflow
+
+**Collect → Validate & Transform → Analyze → Visualize → Document & Report**
+
+This workflow reflects my approach to turning source data and technical input into useful, consistent, and reader-friendly deliverables.
+
+## About Me
+
+I'm Devi Yolanda, a Technical Writer working with IT and cybersecurity operations. I enjoy transforming complex technical information into clear documentation and useful reports. I also explore Python and data-processing workflows to make recurring reporting tasks more consistent and efficient.
+
+I continuously develop my technical, analytical, and communication skills through hands-on projects.
+
+## Connect
+
+- **LinkedIn:** [linkedin.com/in/deviyool](https://www.linkedin.com/in/deviyool)
+- **GitHub:** [github.com/good-pastel](https://github.com/good-pastel)
+
+## Local Preview
+
+1. Download or clone this repository.
+2. Open `index.html` in a web browser.
+3. To edit the design, update `style.css`; to change interactive behavior, update `script.js`.
+
+No build step is required for the current static prototype.
+
+## Deployment
+
+This project can be published with GitHub Pages after the repository files and contact details have been reviewed.
+
+Once the new site is published, add its confirmed URL here:
+
+```text
+Live Demo: [https://good-pastel.github.io/TW-portfolio/]
+```
+
+## License
+
+This repository is intended for personal portfolio and educational purposes.
+
 ---
 
-## 🎯 Purpose
-
-The primary goal of this project is to provide a centralized portfolio where recruiters can quickly explore my documentation skills, technical knowledge, and professional experience.
-
----
-
-## 👩 About Me
-
-I'm passionate about transforming complex technical information into clear, structured, and user-friendly documentation.
-
-Beyond technical writing, I enjoy learning new technologies and continuously improving my communication and documentation skills through hands-on projects.
-
----
-
-## 📬 Connect
-
-- 🌐 [Portfolio Website](https://good-pastel.github.io/TW-portfolio/)
-- 💼 [LinkedIn](https://www.linkedin.com/in/deviyool)
-- 🐙 [GitHub](https://github.com/good-pastel)
-
----
-
-## 📜 License
-
-This repository is intended for portfolio and educational purposes.
-
----
-
-<p align="center">
-
-Part of my personal **Portfolio Projects** collection, where I build, document, and continuously improve through hands-on development.
-
-</p>
+Part of my ongoing portfolio projects, where I document my work, practice new tools, and continuously improve through hands-on development.
