@@ -38,3 +38,15 @@
   .dialog-grid p{font-size:11px}
   .dialog-note{font-size:10px!important}
 }
+
+/* Technical Documentation Dashboard featured project */
+.project-prototype{grid-column:1/-1;grid-template-columns:1.08fr .92fr}
+.prototype-visual{background:#e7f0f8;display:flex;flex-direction:column;justify-content:flex-start}
+.prototype-image-link{display:block;position:relative;z-index:1;width:100%;margin:16px auto 9px;perspective:1200px}
+.prototype-image-link img{display:block;width:100%;height:auto;max-height:330px;object-fit:contain;object-position:center;border:1px solid rgba(67,102,134,.16);border-radius:10px;box-shadow:0 10px 24px rgba(35,60,82,.12);transform:rotate(-.5deg);transition:transform .38s cubic-bezier(.2,.8,.2,1),box-shadow .38s ease}
+.prototype-image-link:focus-visible{outline:3px solid var(--orange);outline-offset:4px;border-radius:10px}
+.prototype-link{display:inline-block;margin-right:18px}
+.project-prototype .visual-tag{position:relative;left:auto;right:auto;bottom:auto;margin-top:auto}
+@media(hover:hover) and (pointer:fine){.project-prototype:hover .prototype-image-link img{transform:rotate(0deg) translateY(-5px) scale(1.008);box-shadow:0 17px 32px rgba(35,60,82,.17)}}
+@media(max-width:900px){.project-prototype{grid-template-columns:1fr}.project-prototype .project-visual{min-height:unset}.prototype-image-link img{max-height:380px}}
+@media(max-width:620px){.project-prototype{grid-column:auto}.prototype-visual{padding:14px}.prototype-image-link{margin-top:14px}.prototype-image-link img{max-height:260px}.project-prototype .visual-tag{font-size:6px}.prototype-link{margin-right:12px;margin-bottom:8px}}
