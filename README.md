@@ -94,24 +94,6 @@ I continuously develop my technical, analytical, and communication skills throug
 - **LinkedIn:** [linkedin.com/in/deviyool](https://www.linkedin.com/in/deviyool)
 - **GitHub:** [github.com/good-pastel](https://github.com/good-pastel)
 
-## Local Preview
-
-1. Download or clone this repository.
-2. Open `index.html` in a web browser.
-3. To edit the design, update `style.css`; to change interactive behavior, update `script.js`.
-
-No build step is required for the current static prototype.
-
-## Deployment
-
-This project can be published with GitHub Pages after the repository files and contact details have been reviewed.
-
-Once the new site is published, add its confirmed URL here:
-
-```text
-https://good-pastel.github.io/TW-portfolio/
-```
-
 ## License
 
 This repository is intended for personal portfolio and educational purposes.
