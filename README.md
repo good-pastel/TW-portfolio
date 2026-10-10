@@ -106,7 +106,7 @@ This project can be published with GitHub Pages after the repository files and c
 Once the new site is published, add its confirmed URL here:
 
 ```text
-Live Demo: [https://good-pastel.github.io/TW-portfolio/]
+Live Demo: https://good-pastel.github.io/TW-portfolio/
 ```
 
 ## License
