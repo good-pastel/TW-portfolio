@@ -8,7 +8,7 @@
 
 A personal portfolio showcasing **Devi Yolanda's** experience in technical writing, cybersecurity documentation, technical reporting, information design, and Python-based reporting automation.
 
-🔗 Live Website: https://good-pastel.github.io/TW-portfolio/
+
 ---
 
 ## Project Overview
@@ -16,6 +16,8 @@ A personal portfolio showcasing **Devi Yolanda's** experience in technical writi
 This portfolio presents how I turn complex technical information into clear, structured, and accessible documentation. It highlights my experience supporting IT and cybersecurity operations through technical documents, operational reporting, data transformation, and visual communication.
 
 The design uses a light pastel-blue palette with orange accents to create a clean, approachable, and professional experience.
+
+🔗 Live Website: https://good-pastel.github.io/TW-portfolio/
 
 ## Features
 
